@@ -10,12 +10,12 @@
 }
 
 /* Filas impares (1, 3, 5...) */
-.lista-alumnos li:nth-child(odd) {
+.lista-alumnos li:nth-child(odd) {/*odd afecta a las posiciones impares*/
     background-color: #1b69b8;
 }
 
 /* Filas pares (2, 4, 6...) */
-.lista-alumnos li:nth-child(even) {
+.lista-alumnos li:nth-child(even) {/*eleven afecta a las posicinoes pares*/
     background-color: #ef0024;
 }
 
