@@ -1,0 +1,19 @@
+/* 14_box_sizing.css */
+
+.caja {
+    width: 300px;
+    padding: 20px;
+    border: 10px solid #1e293b;
+    color: white;
+    font-weight: bold;
+}
+
+.content-box {
+    box-sizing: content-box; /* Comportamiento antiguo */
+    background-color: #ef4444;
+}
+
+.border-box {
+    box-sizing: border-box; /* Estándar moderno recomendado */
+    background-color: #22c55e;
+}

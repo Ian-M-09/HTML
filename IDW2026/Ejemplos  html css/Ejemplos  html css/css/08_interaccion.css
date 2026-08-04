@@ -1,0 +1,26 @@
+/* 08_interaccion.css */
+
+.btn-interactivo {
+    background-color: #8b5cf6;
+    color: white;
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    
+}
+
+/* :hover -> Cuando el puntero pasa por encima */
+.btn-interactivo:hover {
+    background-color: #7c3aed;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(239, 8, 8, 0.4);
+}
+
+/* :active -> Cuando el usuario hace click */
+.btn-interactivo:active {
+    background-color: #6d28d9;
+    transform: translateY(0);
+    text-transform: uppercase;
+}

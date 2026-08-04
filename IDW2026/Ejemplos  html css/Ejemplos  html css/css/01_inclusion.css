@@ -1,0 +1,13 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8fafc;
+    margin: 30px;
+}
+
+.metodo-externo {
+    color: #065f46;
+    background-color: #d1fae5;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}

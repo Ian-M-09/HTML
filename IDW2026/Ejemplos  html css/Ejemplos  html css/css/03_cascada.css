@@ -1,0 +1,14 @@
+.texto {
+    color: red;
+    font-size: 18px;
+}
+
+.texto {
+    color: blue; /* Esta sobreescribe a la anterior */
+    font-size: 1px;
+}
+
+.texto {
+    color: #16a34a; /* ¡Esta es la regla final que aplicará el navegador (verde)! */
+    font-size: 15px;
+}

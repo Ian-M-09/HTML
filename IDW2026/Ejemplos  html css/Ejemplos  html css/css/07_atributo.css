@@ -1,0 +1,25 @@
+/* Selecciona únicamente los inputs de tipo texto */
+input[type="text"] {
+    background-color: #0cc6cf;
+    border: 2px solid #0891b2;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+/* Selecciona los inputs de tipo contraseña */
+input[type="password"] {
+    background-color: #fef2f2;
+    border: 2px solid #ef4444;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+/* Selecciona el botón submit por su atributo */
+input[type="submit"] {
+    background-color: #0891b2;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}

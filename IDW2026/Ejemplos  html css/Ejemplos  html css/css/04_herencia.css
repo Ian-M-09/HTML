@@ -1,0 +1,14 @@
+
+.padre {
+    font-family: 'Georgia', serif;
+    color: #ec440c;
+    background-color: #ffedd5;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* El elemento <p> hereda 'color' y 'font-family' de .padre automáticamente */
+
+button {
+    margin-top: 10px;
+}

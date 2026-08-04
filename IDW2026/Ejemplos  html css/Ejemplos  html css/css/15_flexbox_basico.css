@@ -1,0 +1,24 @@
+
+.contenedor {
+    display: flex; /* Activa el modelo Flexbox */
+    background-color: #e2e8f0;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+.flex-row {
+    flex-direction: row; /* Elementos en horizontal */
+}
+
+.flex-column {
+    flex-direction: column; /* Elementos en vertical */
+}
+
+.caja {
+    background-color: #3b82f6;
+    color: white;
+    padding: 15px;
+    margin: 5px;
+    border-radius: 4px;
+}
