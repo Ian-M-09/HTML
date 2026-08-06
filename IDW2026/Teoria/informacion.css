@@ -1,0 +1,166 @@
+/*lo vinculo al html con la etiquta link
+ej. (de lo que va en el html)
+<link rel="stylesheet" href="titulo del archivo css a enlazar">
+de esta forma enlazo dos archivos 
+OTRA FORMA DE ENZALAR 
+dentro de un mismo archivo html (no se usa)
+<style>
+    body {background-color: lihhtblues;}
+</style>
+
+* estructura de una regla 
+selector= es la clase h1,h2,h3,etc.
+cada declaracion termina con un punto y coma
+ej.
+h1{ la clase puede ser cualquier etiqueta de html
+    font-size: 3.8rem; font-size es el tamaño de la letra
+    color: red; color es el color de la letra
+    padding: 10px; padding es el espacio entre el borde y el contenido
+}
+
+* principio de cascada (cascading style sheets)
+cuando se declaran dos reglas identicas para el mismo elemento, el navegador aplica la ultima escrita de
+arriba hacia abajo
+
+* concepto de herencia 
+los elementos hijos heredan las propiedades de los elementos padres, por ejemplo si 
+se declara un color en el body, todos los elementos hijos heredaran ese color, a menos
+que se declare otro color para ese elemento hijo. ya que lo declarado en el elemento hijo 
+tiene prioridad sobre lo declarado en el elemento padre.
+
+* selectores basicos
+
+1. selector de etiqueta o elemento: se aplica a todos los elementos de ese tipo, ej. h1, p, 
+div, etc. es global y se aplica a todos los elementos de ese tipo en el documento html
+
+2. clase (.): se aplica a todos los elementos que tengan esa clase, ej. .clase1, .clase2, etc.
+es global y se aplica a todos los elementos que tengan esa clase en el documento html
+empiezan por .nombre de la clase (es reutilizable)
+
+3. id (#): se aplica a un solo elemento que tenga ese id, ej. #id1, #id2, etc. sirve para 
+identificar un elemento unico en el documento html
+
+*selectores por atributo
+
+seleccion por atributo exacto:
+<label for="nombre">Nombre</label> label sirve para identificar un elemento unico en el documento html
+for es el atributo que se le asigna al elemento label, y "nombre" es el valor del atributo for
+Nombre es el valor del atributo for, y se le asigna al elemento input con el mismo id
+ej. input[type="text"]{ color: red; } se aplica a todos los elementos
+for funciona como una variable que se le asigna a un elemento y se le puede asignar a otro 
+elemento para que se relacionen
+se accede a ese algo que guado el for mediante un selector de atributo exacto, 
+ej. input[type="text"]{ color: red; } se aplica a todos los elementos
+
+*seudoclases estructurales
+las seudoclases estructurales son aquellas que permiten seleccionar elementos en base a su posición
+ej.
+lo que va en el html
+<header>
+    <nav class="">
+        <a href="#">Inicio</a>
+        <a href="#">Nosotros</a>
+        <a href="#">Servicios</a>
+    </nav>
+</header>
+
+lo que va en el css
+.navegacion-principal a=nth-child(1){ color: red; } se aplica al primer elemento a dentro de la clase navegacion-principal
+.navegacion-principal a=nth-child(2){ color: blue; } se aplica al segundo elemento a dentro de la clase navegacion-principal
+.navegacion-principal a=nth-child(3){ color: green; } se aplica al tercer elemento a dentro de la clase navegacion-principal
+nth-child() es una seudoclase estructural que permite seleccionar elementos en base a su posición dentro de su elemento padre
+a es el selector de etiqueta o elemento, y .navegacion-principal es el selector de clase
+osea navegacion-principal es solo un nombre que le puse a la clase, puede ser cualquier nombre, y a es el selector de etiqueta o 
+elemento, y nth-child() es la seudoclase estructural que permite seleccionar elementos en base a su posición dentro de su elemento padre
+even es para seleccionar elementos pares, y odd es para seleccionar elementos impares
+
+*propiedades tipograficas
+
+font-family: permite especificar la familia tipografica de un elemento, ej. font-family: Arial, sans-serif; Arial es la familia tipografica
+y sans-serif es una familia tipografica generica
+
+font-size: permite especificar el tamaño de la letra de un elemento, ej. font-size: 16px; 16px es el tamaño de la letra
+
+font-weight: permite especificar el grosor de la letra de un elemento, ej. font-weight: bold; bold es el grosor de la letra
+
+line-height: permite especificar la altura de la linea de un elemento, ej. line-height: 1.5; 1.5 es la altura de la linea
+
+margin: permite especificar el margen de un elemento, ej. margin: 10px; 10px es el margen
+
+se recomiensa usar siempre una familia generica al final de la lista de familias tipograficas, ya que si el navegador no encuentra la familia
+tipografica especificada, usara la familia generica especificada
+
+*undidades
+1 pixeles (px): es la unidad mas comun y se usa para especificar el tamaño de la letra, el margen, el padding, etc. 1px=1/96 de pulgada
+
+2 rem: es la unidad que se usa para especificar el tamaño de la letra, el margen, el padding, etc. 1rem=16px (es la que se usa)
+
+3 em: es la unidad que se usa para especificar el tamaño de la letra, el margen, el padding, etc. 1em=16px (puede acumularse en componentes anidados)
+
+4 porcentaje (%): es la unidad que se usa para especificar el tamaño de la letra, el margen, el padding, etc. 100%=16px (es relativo al elemento padre)
+
+5 puntos (pt): es la unidad que se usa para especificar el tamaño de la letra, el margen, el padding, etc. 1pt=1/72 de pulgada
+
+*espaciados: padding y margin
+padding: es el espacio entre el borde y el contenido de un elemento, ej. padding: 10px; 10px es el espacio entre el borde y el contenido
+el contenido puede ser cualquier cosa, texto, imagen, video, etc. y el borde es el borde del elemento, que puede ser visible o invisible
+margin: es el espacio entre el borde de un elemento y el borde de otro elemento, ej. margin: 10px; 10px es el espacio entre el borde de un 
+elemento y el borde de otro elemento
+
+se usa siempre el mismo codigo para el padding y el margin, ya que son propiedades que se aplican a todos los elementos, y se puede especificar el padding y el margin
+el codigo que siempre se usa es el siguiente:
+
+Relleno interno (padding) y externo (margin) de un elemento
+padding-top: 10px; padding-right: 20px; padding-bottom: 10px; padding-left: 20px;
+hace siempre que el contenido del elemento tenga un relleno centrado, ya que el relleno interno (padding) y externo (margin) se aplican a todos los elementos
+
++sintaxis abreviada+
+padding: 10px 20px 10px 20px; padding-top, padding-right, padding-bottom, padding-left
+
+margin: 0 auto; centrado horizontal automatico
+
+*content-box vs border-box
+content-box: (predeterminado y antiguo) el ancho (width) se aplica solo al contenido. padding y borde se le **suman** al tamaño total del elemento. ej. si un elemento tiene un
+ancho de 100px, un padding de 10px y un borde de 5px, el tamaño total del elemento sera de 130px (100+10+10+5+5)
+
+border-box: (nuevo y recomendado) el ancho (width) se aplica al contenido + padding + borde. ej. si un elemento tiene un ancho de 100px, un padding de 10px y un borde de 5px, 
+el tamaño total del elemento sera de 100px (100-10-10-5-5)
+
+en conclusion ambos sirven para lo mismo que es para especificar el tamaño de un elemento, pero border-box es mas facil de usar y entender, ya que el tamaño total del elemento es 
+el mismo que el ancho especificado, mientras que content-box es mas dificil de usar y entender, ya que el tamaño total del elemento es diferente al ancho especificado.
+
+con ellos podemos maquetar un sitio web, ya que podemos especificar el tamaño de los elementos y el espacio entre ellos, y podemos hacer que el sitio web sea responsive, 
+ya que podemos especificar el tamaño de los elementos en porcentaje y en rem.
+responsive: es cuando un sitio web se adapta al tamaño de la pantalla del dispositivo en el que se visualiza, ya sea un computador, una tablet o un celular.    
+un ejemplo de codigo que se adapta a cualquier pantalla es el siguiente:
+*{
+    
+    box-sizing: border-box;
+}
+    div{
+        width: 50%; uso de porcentaje para que se adapte al tamaño de la pantalla
+        padding: 10px;
+        margin: 0 auto;
+}
+el * debe ser reemplazado por el selector de etiqueta o elemento que se quiera aplicar, ya que el * aplica a todos los elementos del documento html, y puede causar problemas de rendimiento si se aplica a muchos elementos.
+si lo reemplazo por body, se aplicara solo al body y a sus elementos hijos, y si lo reemplazo por div, se aplicara solo a los div y a sus elementos hijos.
+
+* flujo normal(posicion static)
+los elementos se posicionan siguiendo el orden natural del html y no responden a propiedades 'top', 'left', 'right' y 'bottom', ya que no se puede especificar la posicion de un elemento
+osea uno arriba del otro
+
+*position relative
+desplaza al elemento en relacion con su propia posicion original sin alterar el espacio reservado para el en el flujo.
+
+ej.
+.*{
+    position: relative;
+    top: 10px; desplaza el elemento 10px hacia abajo
+    left: 10px; desplaza el elemento 10px hacia la derecha
+}
+* lo cambio por el selector de etiqueta o elemento que se quiera aplicar.
+lo que hace el codigo es que el elemento se acomode en su posicion original y depues se desplace lo indicado, y el espacio que ocupaba el elemento en su posicion original sigue estando ocupado, por lo que los demas elementos no se mueven.
+
+
+
+*/

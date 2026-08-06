@@ -60,3 +60,17 @@ href — destino del enlace
 src — origen de la imagen
 alt — texto alternativo de la imagen
 width — ancho de la imagen
+
+<div> 
+  funciona como una caja a la cual le puedo hacer cosas con css
+</div>
+
+vinculo un archivo css al html con la etiquta link
+ej. (de lo que va en el html)
+<link rel="stylesheet" href="titulo del archivo css a enlazar">
+de esta forma enlazo dos archivos 
+OTRA FORMA DE ENZALAR 
+dentro de un mismo archivo html (no se usa)
+<style>
+    body {background-color: lihhtblues;}
+</style>

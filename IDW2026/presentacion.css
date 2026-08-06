@@ -1,0 +1,26 @@
+body {
+    font-family: 'Bitcount Prop Single', sans-serif;
+    line-height: 1.6;
+    margin: 2rem;
+}
+
+body{  
+    box-sizing: border-box;
+}
+div{
+    width: 50%; /*uso de porcentaje para que se adapte al tamaño de la pantalla*/
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.titulo{
+    position: relative;
+    top: 50px; /*desplaza el elemento 10px hacia abajo*/
+    left: 10px; /*desplaza el elemento 10px hacia la derecha*/
+}
+
+.lenguajes{
+    position: relative;
+    top: 50px; /*desplaza el elemento 10px hacia abajo*/
+    left: 50px; /*desplaza el elemento 10px hacia la derecha*/
+}
