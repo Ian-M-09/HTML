@@ -1,26 +1,53 @@
 body {
     font-family: 'Bitcount Prop Single', sans-serif;
     line-height: 1.6;
-    margin: 2rem;
+    margin: 2%;
 }
 
 body{  
     box-sizing: border-box;
 }
 div{
-    width: 50%; /*uso de porcentaje para que se adapte al tamaño de la pantalla*/
-    padding: 10px;
-    margin: 0 auto;
+    width: 50%; /*uso de porcentaje para que se adapte al tamaño de la pantalla. width sirve para establecer el ancho del elemento */
+    padding: 1%;/*espacio entre los elementos*/
+    margin: 0 auto;/*margin: 0 auto; centra el elemento horizontalmente*/
 }
 
 .titulo{
-    position: relative;
-    top: 50px; /*desplaza el elemento 10px hacia abajo*/
-    left: 10px; /*desplaza el elemento 10px hacia la derecha*/
+    display:flex;
+    justify-content: center;/*centra de lado a lado*/
+    align-items: center; /*centra de arriba a abajo*/
+    text-decoration: underline; /*subraya el texto*/
 }
 
 .lenguajes{
     position: relative;
-    top: 50px; /*desplaza el elemento 10px hacia abajo*/
-    left: 50px; /*desplaza el elemento 10px hacia la derecha*/
+    justify-content: center;/*centra de lado a lado*/
+    align-items: center; /*centra de arriba a abajo*/
+}
+
+.h{
+    text-decoration: underline; /*subraya el texto*/
+}
+
+.texto-imagen{
+    display: flex; /*display: flex; para alinear los elementos horizontalmente*/
+    align-items: center; /*alinia los elementos verticalmente*/
+    justify-content: space-between; /*distribuye el espacio entre los elementos*/
+    gap: 5%; /*espacio entre los elementos*/
+}
+
+.boton-github {
+    display: inline-block;/*sirve para que el boton se muestre como un bloque en linea*/
+    margin-top: 1%;/*espacio superior*/
+    padding: 1% 1%;/*espacio interno*/
+    background-color: #24292f;/*color de fondo*/
+    color: white;/*color de texto*/
+    text-decoration: none;/*decoracion del texto (none=ninguna)*/
+    border-radius: 4%;/*espacio en las esquinas*/
+    font-weight: bold;/*negrita*/
+}
+
+.boton-github:hover {/*hover es el estado cuando el mouse está sobre el botón*/
+    background-color: #444c56;/*color que toma cuando el mouse está sobre el botón*/
 }

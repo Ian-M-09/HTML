@@ -147,20 +147,54 @@ si lo reemplazo por body, se aplicara solo al body y a sus elementos hijos, y si
 
 * flujo normal(posicion static)
 los elementos se posicionan siguiendo el orden natural del html y no responden a propiedades 'top', 'left', 'right' y 'bottom', ya que no se puede especificar la posicion de un elemento
-osea uno arriba del otro
+osea uno arriba del otro (no puedo mover el elemento de su posicion original)
 
 *position relative
 desplaza al elemento en relacion con su propia posicion original sin alterar el espacio reservado para el en el flujo.
 
 ej.
 .*{
-    position: relative;
+    position: relative; me permite mover el elemento
     top: 10px; desplaza el elemento 10px hacia abajo
     left: 10px; desplaza el elemento 10px hacia la derecha
 }
 * lo cambio por el selector de etiqueta o elemento que se quiera aplicar.
 lo que hace el codigo es que el elemento se acomode en su posicion original y depues se desplace lo indicado, y el espacio que ocupaba el elemento en su posicion original sigue estando ocupado, por lo que los demas elementos no se mueven.
 
+*posicion absolute
+saca el elemento por completo del flujo normal de la pagina, de modo que ya no reserva espacios para el
+se ubica segun su ancestro (padre) mas cercano que tenga una posicion distinta a static. si no encuentra ninguno, toma como referencia toda la pantalla
+los demas elementos ignoran su presencia y pueden pasar por debajo o por encima de el.
 
+*fundamentos de flexbox
+forma de organizar elementos en filas o columnas. estos elementos se adapatan(es decir, se expanden o se contraen) segun siertas reglas que se pueden definir
+
+direccion de eje (flex-direction)
+row: los elementos se organizan en filas (de izquierda a derecha)
+row-reverse: los elementos se organizan en filas de derecha a izquierda
+column: de arriba a abajo
+column-reverse: de abajo hacia arriba
+
+* alineacion en el eje principal
+distribucion con justifi-content
+controla como se distribuyen los elementos a lo largo del eje principal
+
+flex-start: agrupa al inicio del eje
+flex-end: agrupa al final del eje
+center: centra los elementos
+space-between: espacio maximo entre intems
+space-around: espacio uniforme alrededor
+
+*alineacion en eje cruzado
+
+alineacion con aling-items alinea elementos perpediculares al eje principal (Cross axis)
+valores principales:
+stretch: estira los elementos para llenar (por defecto)
+center: centra verticalmente los elementos.
+flex-start: alinea en el borde superior
+flex-end: alinea en el borde inferior
+
+*flex-wrap
+por defecto, intenta mantener todo en una sola linea
 
 */

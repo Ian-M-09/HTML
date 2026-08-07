@@ -1,0 +1,26 @@
+:root{
+    --color-letras : rgb(12, 12, 12);
+    --color-letras-header: white;
+    --color-fondo : rgb(238, 237, 237);
+    --color-principal: #1f2937;
+    --color-secciones:  #2563eb;
+    --color-btn: #2563eb;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-letras);
+    line-height: 1.5; /*Distancia entre Lineas*/
+}
+
+
+.header{
+    background-color: var(--color-principal);
+}
