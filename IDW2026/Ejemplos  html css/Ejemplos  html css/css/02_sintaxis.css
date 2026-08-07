@@ -1,0 +1,13 @@
+.titulo {
+    color: #d97706;              /* Propiedad color */
+    font-size: 2.2rem;           /* Propiedad tamaño de fuente */
+    text-align: center;          /* Alineación */
+    text-transform: uppercase;   /* Mayúsculas */
+}
+
+.caja-explicacion {
+    background-color: #f83411;
+    border-left: 5px solid #a09d9a;
+    padding: 15px;
+    font-size: 1.5rem;
+}

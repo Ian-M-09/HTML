@@ -1,0 +1,18 @@
+/* 13_espaciados.css */
+
+.caja-uno {
+    background-color: #3b82f6;
+    color: white;
+}
+
+.caja-dos {
+    background-color: #10b981;
+    color: white;
+    
+    /* Padding: Espacio INTERNO (entre el texto y el borde) */
+    padding: 25px;
+    
+    /* Margin: Espacio EXTERNO (empuja a otros elementos) */
+    margin-top: 40px;
+    margin-left: 20px;
+}

@@ -1,0 +1,19 @@
+/* 19_flex_wrap.css */
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap; /* Permite multi-línea cuando no entran los elementos */
+    gap: 15px;       /* Espaciado moderno sin necesidad de margin */
+    background-color: #f8fafc;
+    padding: 15px;
+}
+
+.item {
+    
+    height: 100px;
+    background-color: #6366f1;
+    padding: 10px 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+}

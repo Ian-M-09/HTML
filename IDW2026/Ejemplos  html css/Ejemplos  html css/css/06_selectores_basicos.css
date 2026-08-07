@@ -1,0 +1,21 @@
+/* 1. Selector de Etiqueta (afecta a todos los h1) */
+h1 {
+    color: #1e40af;
+    border-bottom: 2px solid #1e40af;
+}
+
+/* 2. Selector de Clase (empieza con . y se puede reutilizar) */
+.destacado {
+    background-color: #fef08a;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* 3. Selector de ID (empieza con #, debe ser único en la página) */
+#btn-unico {
+    background-color: #dc2626;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+}

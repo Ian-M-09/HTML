@@ -1,0 +1,20 @@
+
+.contenedor-flex {
+    display: flex;
+    height: 300px;
+    background-color: #f1f5f9;
+    border: 2px solid #cbd5e1;
+    
+    /* Eje Principal (Horizontal) */
+    justify-content: space-between; /* flex-start | center | flex-end | space-between | space-around */
+    
+    /* Eje Cruzado (Vertical) */
+    align-items: center; /* flex-start | center | flex-end | stretch */
+}
+
+.caja {
+    background-color: #10b981;
+    color: white;
+    padding: 20px;
+    border-radius: 6px;
+}
