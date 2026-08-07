@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 body {
     font-family: 'Bitcount Prop Single', sans-serif;
     line-height: 1.6;
@@ -51,8 +50,4 @@ div{
 
 .boton-github:hover {/*hover es el estado cuando el mouse está sobre el botón*/
     background-color: #444c56;/*color que toma cuando el mouse está sobre el botón*/
-=======
-.sobre-mi-containter{
-    
->>>>>>> origin/main
 }
